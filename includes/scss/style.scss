@@ -1,0 +1,65 @@
+@import 'vendors/_bootstrap.scss';
+
+/* Vars */
+$primary-color:#A500C0;
+$background-color:#00D872;
+$text-color:#233A4B;
+$font:16px;
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', Arial, Tahoma;
+}
+
+
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+
+.primary, strong, h2{
+  color: $primary-color;
+}
+
+.background-color{
+  color: $background-color;
+}
+
+.marketing {
+  padding: 20px;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+
+.navbar-brand {
+  padding: 13px 15px;
+}
+
+navbar {
+  text: #fff;
+}
+
+/* footer */
+
+.center {
+  text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 25px;
+}
+
+.org_profile{
+  height: 50px;
+}
+
+.center {
+  text-align: center;
+}

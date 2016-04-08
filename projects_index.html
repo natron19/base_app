@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>AnSpring App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">AnSpring</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Organization<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="org_index.html">All My Organizations</a></li>
+                <li><a href="#">Collective Nexus</a></li>
+                <li><a href="#">John Muir Elemenatry PTA</a></li>
+                <li><a href="#">Greysands Media LLC</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Create New Organization</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="member_details.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="member_details.html">Account Details</a></li>
+                <li><a href="member_password_reset.html">Password</a></li>
+                <li><a href="member_privacy.html">Privacy</a></li>
+              </ul>
+            </li>
+            <li><a href="../navbar/">Sign Out</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="org_show.html">Dashboard</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="projects_index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Projects <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="projects_index.html">All Projects</a></li>
+                  <li><a href="projects_my.html">My Projects</a></li>
+                  <li><a href="projects_create.html">Create a Project</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="member_profile_show.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile-placeholder.png" class="profile">  My Profile <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="member_profile_show.html">View My Profile</a></li>
+                  <li><a href="member_profile_edit.html">Edit My Profile</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="groups_index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Groups <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="groups_index.html">All Groups</a></li>
+                  <li><a href="groups_my.html">My Groups</a></li>
+                  <li><a href="group_create.html">Create a Group</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="members_index.html.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="members_index.html">All Members</a></li>
+                  <li><a href="members_manage_grid.html">Manage Permissions</a></li>
+                  <li><a href="members_invite.html">Invite Members</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="messages_index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Messages <span class="badge">14</span> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="messages_index.html">All Messages</a></li>
+                  <li><a href="message_create.html">Create Message</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div >
+            <h2>Projects</h2>
+
+          </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="organization_show">
+                    All Projects</a>
+                  </li>
+
+                  <li class="list-group-item"><a href="groups_index.html">
+                    My Projects </a>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default">Create</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <table class="table">
+                  <tr>
+                    <th>Project</th>
+                    <th>Tasks</th>
+                    <th>Action</th>
+                  </tr>
+                  <tr>
+                    <td>The Winter Show</td>
+                    <td>
+                      33
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-link">Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>The Spring Show</td>
+                    <td>
+                      33
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-link">Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>The Summer Show</td>
+                    <td>
+                      33
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-link">Edit</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <hr>
+
+    </div> <!-- /container -->
+
+
+
+    <footer>
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer-list"><a href="#about">Home</a></li>
+              <li class="footer-list"><a href="#about">Sign Up</a></li>
+              <li class="footer-list"><a href="#about">Features</a></li>
+              <li class="footer-list"><a href="#about">About</a></li>
+              <li class="footer-list"><a href="#about">Investors</a></li>
+              <li class="footer-list"><a href="#about">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer-list"><a href="#about">Terms of Service</a></li>
+              <li class="footer-list"><a href="#about">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer-list"><a href="#about">Support</a></li>
+              <li class="footer-list"><a href="#about">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p><a href="#">&copy; 2016, Collective Nexus, LLC</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- First try for the online version of jQuery-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="includes/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
